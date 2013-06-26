@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >	
+    <RelativeLayout 
+        android:id="@+id/rel_layout"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/black"
+        >
+        <TextView android:hint="AccountName"
+            android:layout_alignParentLeft="true" 
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:padding="10dp"
+	    	android:textColor="@color/blue"
+	    	android:textStyle="bold"
+            />
+        <TextView android:hint="Balance"
+            android:layout_alignParentRight="true" 
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:padding="10dp"
+	    	android:textColor="@color/blue"
+	    	android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+	<ListView
+	    android:id="@+id/userlist_listview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.0"
+	    android:dividerHeight="10dp"
+	    android:hint="USER_LIST" >
+
+	</ListView>
+	<RelativeLayout 
+        android:id="@+id/rel_layout2"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/black"
+        >
+
+	<TextView
+	    android:id="@+id/total_balance"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+		android:textStyle="bold|italic"
+		android:padding="5dp"
+		android:paddingRight="8dp"
+	    android:hint="TotalBalance.."
+	    android:textColor="@color/white" />
+
+	</RelativeLayout>
+
+</LinearLayout>
